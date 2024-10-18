@@ -37,26 +37,27 @@ function showAddCars(){
         <h3>Add car</h3>
         <div>
             <label>brand:</label>
-            <input type="text">
+            <input type="text" onchange="saveBrand(this.value)">
         </div>
         <div>
             <label>year:</label>
-            <input type="number">
+            <input type="number" onchange="saveYear(this.value)">
         </div>
         <div>
             <label>color:</label>
-            <input type="text">
+            <input type="text" onchange="saveColor(this.value)">
         </div>
         <div>
             <label>licensePlate:</label>
-            <input type="text">
+            <input type="text" onchange="saveLicensePlate(this.value)">
         </div>
         <div>
             <label>kmhDistance:</label>
-            <input type="number">
+            <input type="number" onchange="saveKmhDistance(this.value)">
         </div>
 
-    `;
+        <button onclick="addCar()">Add car</button>
+        `;
     return html;
 
 
