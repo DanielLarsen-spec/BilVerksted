@@ -7,6 +7,7 @@ const model = {
 
     input:{
         newCar:{
+            id: null,
             brand: null,
             year: null,
             color: null,
@@ -19,6 +20,7 @@ const model = {
      data:{
         cars:[
             {
+                id: 12312,
                 brand: 'ford',
                 year: 1997,
                 color: 'brown',
@@ -26,6 +28,7 @@ const model = {
                 kmhDistance: 254999,
             },
             {
+                id: 12431,
                 brand: 'Volvo',
                 year: 2006,
                 color: 'black',

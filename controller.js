@@ -21,6 +21,7 @@ function addCar(){
     
     */ 
    const newCar = {
+    id: createId(),
     brand: model.input.newCar.brand,
     year: model.input.newCar.year,
     color: model.input.newCar.color,
@@ -28,6 +29,7 @@ function addCar(){
     kmhDistance: model.input.newCar.kmhDistance,
    }
    model.data.cars.push(newCar)
+   console.log(model.data.cars)
    emptyNewCarValues();
 updateView()
 
@@ -39,4 +41,18 @@ function emptyNewCarValues(){
     model.input.newCar.color = null;
     model.input.newCar.licensePlate = null;
     model.input.newCar.kmhDistance = null;
+}
+
+function createId(){
+let newId =  Math.floor(Math.random()*9999)
+
+for(let i = 0; i < model.data.cars.length; i++){
+    
+    if(newId === model.data.cars[i].id){
+       createId();
+    }
+
+}
+return newId;
+
 }
