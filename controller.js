@@ -44,7 +44,7 @@ function emptyNewCarValues(){
 }
 
 function createId(){
-let newId =  Math.floor(Math.random()*9999)
+let newId =  Math.floor(Math.random()*99999)
 
 for(let i = 0; i < model.data.cars.length; i++){
     

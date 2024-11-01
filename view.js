@@ -2,7 +2,7 @@ updateView()
 function updateView(){
 model.app.div.innerHTML = /*html*/`
 
-<h1>Daniels Bilverksted</h1>
+<h1>Bjarnes Verksted</h1>
 <div>${showAddCars()}</div>
 <div>${showCars()}</div>
 
